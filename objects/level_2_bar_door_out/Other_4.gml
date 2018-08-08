@@ -1,0 +1,1 @@
+camera_set_view_pos(mouse.myCamera,0,0);

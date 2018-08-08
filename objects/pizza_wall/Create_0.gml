@@ -1,0 +1,9 @@
+top = pizza_top;
+left = pizza_left;
+right = pizza_right;
+bottom = pizza_bottom;
+top_left = pizza_top_left;
+bottom_right = pizza_bottom_right;
+top_right = pizza_top_right;
+bottom_left = pizza_bottom_left;
+object = pizza_wall

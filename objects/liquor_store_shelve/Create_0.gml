@@ -1,0 +1,1 @@
+depth = layer_get_depth("walls")-x/64*2-y/64*2

@@ -1,0 +1,9 @@
+top = counter_top;
+left = counter_left;
+right = counter_right;
+bottom = counter_bottom;
+top_left = counter_top_left;
+bottom_right = counter_bottom_right;
+top_right = counter_top_right;
+bottom_left = counter_bottom_left;
+object = modular_wall

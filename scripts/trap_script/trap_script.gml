@@ -1,0 +1,10 @@
+var invIndex = ds_list_find_index(holder.inventory,self);
+delete_id = holder.inventory;
+delete_pos = invIndex;
+delete_flag = 1;
+var placed = instance_create_layer(holder.x,holder.y,"ground",trap_placed);
+var det = instance_create_layer(holder.x,holder.y,"ground",trap_detonator);
+det.paired = placed;
+det.dropped = 0;
+det.holder = holder;
+ds_list_add(holder.inventory,det);

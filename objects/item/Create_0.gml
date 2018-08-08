@@ -1,0 +1,13 @@
+use = item_template;
+sprite_inventory = circle_mask;
+sprite_dropped = circle_mask;
+dropped = true;
+holder = noone;
+t = 100;
+tdir = 0;
+delete_id = -1;
+delete_pos = -1;
+delete_flag = 0;
+tool_tip_txt = "lorem ipsum"
+cooldown = 26;
+cooldown_timer = 0;
