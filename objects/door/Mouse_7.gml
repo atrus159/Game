@@ -1,4 +1,4 @@
-if(clicked_on){
+if(clicked_on && !control.paused){
 	clicked_on = 0;
 	if(distance_to_object(instance_nearest(x,y,pc_character))<=64){
 		if(!blocked){

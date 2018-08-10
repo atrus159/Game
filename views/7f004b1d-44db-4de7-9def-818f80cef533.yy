@@ -9,7 +9,9 @@
         "0f2f6302-d28d-4ea8-8e60-ce37fdd5fec5",
         "e4865958-e494-4244-9ae0-2baa0a585d6e",
         "76b6af12-5cb3-4da8-886e-a66bfe219bf7",
-        "a88b2e89-822c-473b-b4e9-f0e54f31dd9f"
+        "a88b2e89-822c-473b-b4e9-f0e54f31dd9f",
+        "fd4e2a3b-6a34-4b77-9f4d-2900983c501f",
+        "de9c37fe-17cd-4982-824e-5907bbb39db6"
     ],
     "filterType": "GMObject",
     "folderName": "door_test",

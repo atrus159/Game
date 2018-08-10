@@ -1,3 +1,4 @@
+event_inherited()
 if(on){
 	sprite_inventory = gloves_inventory_on;	
 	use = gloves_on

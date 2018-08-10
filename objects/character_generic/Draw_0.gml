@@ -1,3 +1,4 @@
+
 if(!control.paused){
 if(destinationX != -1 && destinationY != -1){
 	if(foot_facing == 0){
@@ -30,6 +31,8 @@ if(destinationX != -1 && destinationY != -1){
 }
 
 draw_sprite_ext(sprite_index, -1, x, y, 1, 1, direction, c_white, 1);
+
+
 if(selected){
 	draw_set_color(c_lime){
 		draw_rectangle(x-sprite_width/2,y-sprite_height/2,x+sprite_width/2,y+sprite_height/2, true);

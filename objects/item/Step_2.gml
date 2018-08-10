@@ -1,3 +1,4 @@
+//you made it to an end step
 if(delete_pos != -1){
 	ds_list_delete(delete_id,delete_pos);
 	delete_pos = -1;

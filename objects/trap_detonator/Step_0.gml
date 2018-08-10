@@ -1,3 +1,4 @@
+event_inherited()
 if(paired && instance_exists(paired)){
 	use = detonator_script;
 

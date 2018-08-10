@@ -7,3 +7,4 @@ bottom_right = concrete_bottom_right;
 top_right = concrete_top_right;
 bottom_left = concrete_bottom_left;
 object = modular_wall
+move_snap(8,8)

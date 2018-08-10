@@ -14,6 +14,7 @@ foot_facing = 0;
 turn_speed = 1;
 foot_left = nicole_left_foot
 foot_right = nicole_right_foot
+
 inventory = ds_list_create();
 char_health = 100;
 char_max_health = 100;

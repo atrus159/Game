@@ -2,6 +2,7 @@ draw_set_font(GUI_font)
 //draw_text(100,100,global.MonitorW);
 //draw_text(200,100,global.MonitorH);
 
+
 //draw pickup t
 with(item){
 	if(dropped){
@@ -104,7 +105,7 @@ if(ds_list_size(selected)!=0){
 		draw_circle(get_inventoryX(i)-inventory_slot_size/2,get_inventoryY(i)-inventory_slot_size/2,7,true)
 		draw_set_font(small_font)
 		draw_set_color(c_lime)
-		draw_text(get_inventoryX(i)-inventory_slot_size/2-4,get_inventoryY(i)-inventory_slot_size/2-12,i+1);
+		draw_text(get_inventoryX(i)-inventory_slot_size/2-4,get_inventoryY(i)-inventory_slot_size/2-9,get_inv_button(i));
 	}
 	
 	//draw tooltips

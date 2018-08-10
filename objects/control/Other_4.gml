@@ -14,3 +14,4 @@ if(door_out != noone){
 	}
 	door_out = noone
 }
+

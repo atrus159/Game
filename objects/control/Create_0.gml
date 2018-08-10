@@ -10,7 +10,7 @@ text_width = 300;
 text_height = 30;
 paused = false;
 inventory_size = 9;
-window_set_fullscreen(true);
+//window_set_fullscreen(true);
 //window_set_rectangle(100,100,1024,768);
 //application_surface_draw_enable(false);
 global.MonitorW=display_get_width();

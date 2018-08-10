@@ -1,5 +1,8 @@
-if(t<(tMax+10)){
-	t++	
+if(t<(tMax)){
+	t++
+}else if(t==(tMax)){
+	last_frame = 1;
+	t++
 }else{
 	control.paused = 0;
 	mouse.fixed_camera = 0;
