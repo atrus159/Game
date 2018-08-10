@@ -6,12 +6,17 @@ if(mouse_check_button_pressed(mb_left)){
 
 if(mouse_check_button_released(mb_left)){
 	if(selecting && !mouse.fixed_camera){
+
 		if(!keyboard_check(vk_shift)){
-		ds_list_clear(selected);
+			if(!dont_deselect ){
+				ds_list_clear(selected);
+			}
 		}
 		with(pc_character){
 			if(!keyboard_check(vk_shift)){
-			selected = false;
+				if(!control.dont_deselect ){
+				selected = false;
+				}
 			}
 			if(box_select(other.selectX,other.selectY,mouse.x,mouse.y, x, y, sprite_width)){
 				selected = true;
@@ -21,6 +26,9 @@ if(mouse_check_button_released(mb_left)){
 			}
 		}
 		selecting = false;
+		if(dont_deselect){
+			dont_deselect = false;		
+		}
 	}else{
 		selecting = false;	
 	}

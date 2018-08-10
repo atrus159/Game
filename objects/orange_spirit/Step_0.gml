@@ -5,10 +5,18 @@ if(!control.paused && !stored && store_x == -1 && store_y == -1){
 		case 0:
 			t += random(4);
 		if(t>60*4){
+		if(!instance_exists(orange_spirit_focus)){
+			instance_create_layer(x,y,"ground",orange_spirit_focus)
+		}else{
 			destinationX = x+random(500) - 250;
 			destinationY = y+random(500) - 250;
+			while(point_distance(destinationX,destinationY,orange_spirit_focus.x,orange_spirit_focus.y)>300){
+				destinationX = x+random(500) - 250;
+				destinationY = y+random(500) - 250;	
+			}
 			t = 0;
 			find_space();
+			}
 		}
 		mp_potential_step_object(destinationX,destinationY,3,spirit_wall);
 		facing = direction;

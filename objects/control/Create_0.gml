@@ -36,6 +36,7 @@ inventory_slot_size = 55//(hud_height-72)/3;
 
 
 door_out = noone;
+dont_deselect = 0;
 
 //Names
 tomas_name = "BOUNCER"

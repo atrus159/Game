@@ -4,7 +4,8 @@ draw_set_font(GUI_font)
 
 
 //draw pickup t
-with(item){
+
+/*with(item){
 	if(dropped){
 		if (!point_in_rectangle(x, y, view_xview[0], view_yview[0], view_xview[0] + view_wview[0], view_yview[0] + view_hview[0])) {
 		if(distance_to_object(instance_nearest(x,y,pc_character))<64){
@@ -17,19 +18,19 @@ with(item){
 		draw_set_alpha(1);
 	}
 }
-}
+}*/
 
 //draw healthbars
 with(character_generic){
 	if(char_health < char_max_health){
-		if (!point_in_rectangle(x, y, view_xview[0], view_yview[0], view_xview[0] + view_wview[0], view_yview[0] + view_hview[0])) {
+		//if (!point_in_rectangle(x, y, view_xview[0], view_yview[0], view_xview[0] + view_wview[0], view_yview[0] + view_hview[0])) {
 			draw_set_alpha(0.5)
 			draw_set_color(c_black)
 			draw_rectangle(get_gui_x(x)-32,get_gui_y(y)+32,get_gui_x(x)+32,get_gui_y(y)+40,false);
 			draw_set_color(c_lime)
 			draw_rectangle(get_gui_x(x)-30,get_gui_y(y)+34,get_gui_x(x)+(char_health/char_max_health)*60-30,get_gui_y(y)+38,false);	
 			draw_set_alpha(1);
-		}
+		//}
 	}
 	
 }

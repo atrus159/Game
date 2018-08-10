@@ -14,4 +14,19 @@ switch(argument0){
 	case 4:
 		return "T"
 		break;
+	case 5:
+		return "Y"
+		break;
+	case 6:
+		return "U"
+		break;
+	case 7:
+		return "I"
+		break;
+	case 8:
+		return "O"
+		break;
+	case 9:
+		return "P"
+		break;
 }

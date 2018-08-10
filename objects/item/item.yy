@@ -20,8 +20,8 @@
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 84,
-            "eventtype": 9,
+            "enumb": 4,
+            "eventtype": 6,
             "m_owner": "886722cc-84d5-45ad-b6f5-bca61f7fa3f0"
         },
         {
@@ -65,7 +65,7 @@
             "m_owner": "886722cc-84d5-45ad-b6f5-bca61f7fa3f0"
         }
     ],
-    "maskSpriteId": "00000000-0000-0000-0000-000000000000",
+    "maskSpriteId": "a1aa9ee8-2c49-42fe-81b4-7d2ec2d13d2b",
     "overriddenProperties": null,
     "parentObjectId": "00000000-0000-0000-0000-000000000000",
     "persistent": false,
