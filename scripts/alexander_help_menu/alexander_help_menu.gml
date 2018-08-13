@@ -3,7 +3,7 @@ with(text_element){
 }
 point_characters(alexander_interactable,true);
 create_header("Alexander leans against the van nonchalantly.");
-create_option("I want advice on what to do next.",text_template,0);
+create_option("I want advice on what to do next.",alexander_advice,0);
 var hasSpirits = 0;
 with(trap_stored){
 	if(!dropped && ds_list_size(stored_list)>0){

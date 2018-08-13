@@ -14,7 +14,7 @@ if(!control.paused && !stored && store_x == -1 && store_y == -1){
 		}
 		
 		d_offset = angle_difference(d_target,facing)/45
-		mp_potential_step_object(x+cos(-degtorad(facing))*10,y+sin(-degtorad(facing))*10,3,spirit_wall)
+		mp_potential_step_object(x+cos(-degtorad(facing))*10,y+sin(-degtorad(facing))*10,3/(disable_stack+1),spirit_wall)
 		nearest = instance_nearest(x,y,pc_character);
 		if(distance_to_object(nearest)<300){
 		if(!random(100)){
@@ -33,7 +33,7 @@ if(!control.paused && !stored && store_x == -1 && store_y == -1){
 		d_target = -darctan2(nearest.y-y,nearest.x-x)	
 		d_offset = angle_difference(d_target,facing)/20
 		facing += d_offset;
-		mp_potential_step_object(x+cos(-degtorad(facing))*10,y+sin(-degtorad(facing))*10,5,spirit_wall)
+		mp_potential_step_object(x+cos(-degtorad(facing))*10,y+sin(-degtorad(facing))*10,5/(disable_stack+1),spirit_wall)
 		break;
 		
 	}

@@ -1,0 +1,1 @@
+instance_destroy(instance_nearest(x,y,disruptor_base))

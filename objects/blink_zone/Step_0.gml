@@ -1,9 +1,10 @@
-if(mouse_check_button_pressed(mb_left)){
+if(mouse_check_button_pressed(mb_right)){
 	instance_destroy(self);	
 }
 
 if(!control.paused){
-	if(mouse_check_button_pressed(mb_right)){
+	if(mouse_check_button_pressed(mb_left)){
+		control.dont_deselect = true;
 		var hX = holder.x
 		var hY = holder.y;
 		var hold = holder

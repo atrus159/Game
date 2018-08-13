@@ -18,7 +18,7 @@ if(!control.paused && !stored && store_x == -1 && store_y == -1){
 			find_space();
 			}
 		}
-		mp_potential_step_object(destinationX,destinationY,3,spirit_wall);
+		mp_potential_step_object(destinationX,destinationY,3/(disable_stack+1),spirit_wall);
 		facing = direction;
 		if(distance_to_object(nearest)<=200){
 			state  = 1;
@@ -29,10 +29,10 @@ if(!control.paused && !stored && store_x == -1 && store_y == -1){
 		facing = 180-darctan2(y-nearest.y,x-nearest.x);
 		var dist = distance_to_object(nearest);
 		if(dist>200 && dist <300){
-			mp_potential_step_object(nearest.x,nearest.y,5,spirit_wall);
+			mp_potential_step_object(nearest.x,nearest.y,5/(disable_stack+1),spirit_wall);
 		}else if(dist<180){
 				t += 1;
-			mp_potential_step_object(nearest.x,nearest.y,-5,spirit_wall);
+			mp_potential_step_object(nearest.x,nearest.y,-5/(disable_stack+1),spirit_wall);
 		}else if(dist>=300){
 			state = 0;
 			t = 0;

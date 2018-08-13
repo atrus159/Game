@@ -1,5 +1,6 @@
 hud_edge_weigth = 10;
-
+show_debug_overlay(true)
+advice_text = ""
 
 selecting = false;
 selected = ds_list_create();

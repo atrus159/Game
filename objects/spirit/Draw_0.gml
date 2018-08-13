@@ -7,3 +7,4 @@ if(!stored){
 		draw_sprite_ext(sprite_index,-1,x,y,dist/50,1,-darctan2(y-store_y,x-store_x),c_white,dist/100);
 	}
 }
+//draw_text(x,y,disable_stack);
