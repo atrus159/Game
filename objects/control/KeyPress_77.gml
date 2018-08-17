@@ -1,1 +1,1 @@
-instance_create_layer(mouse_x,mouse_y,"ground",disruptor_placing);
+//instance_create_layer(mouse_x,mouse_y,"ground",disruptor_placing);

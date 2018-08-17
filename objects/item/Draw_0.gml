@@ -7,7 +7,7 @@ if(t> 150){
 	tdir = 1;
 }
 if(t<50){
-  tdir = 0;	
+	tdir = 0;	
 }
 
 if(dropped){

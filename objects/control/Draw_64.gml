@@ -90,11 +90,12 @@ draw_text(draw_width*(5/6+1/124),draw_height-hud_height-3,"$"+string(money))
 if(ds_list_size(selected)!=0){
 	var inventory = ds_list_find_value(selected,0).inventory;
 	for(i = 0; i<ds_list_size(inventory);i++){
-		draw_sprite(ds_list_find_value(inventory,i).sprite_inventory,-1,get_inventoryX(i),get_inventoryY(i))
+		var currentObject = ds_list_find_value(inventory,i)
+		draw_sprite(currentObject.sprite_inventory,-1,get_inventoryX(i),get_inventoryY(i))
 		
-		if(ds_list_find_value(inventory,i).cooldown_timer>0){
-			var ct = ds_list_find_value(inventory,i).cooldown_timer;
-			var c = ds_list_find_value(inventory,i).cooldown;
+		if(currentObject.cooldown_timer>0){
+			var ct = currentObject.cooldown_timer;
+			var c = currentObject.cooldown;
 			draw_set_alpha(0.5);
 			draw_sprite(item_cooldown,	25*(c-ct)/c,get_inventoryX(i),get_inventoryY(i));
 			draw_set_alpha(1);
@@ -107,6 +108,14 @@ if(ds_list_size(selected)!=0){
 		draw_set_font(small_font)
 		draw_set_color(c_lime)
 		draw_text(get_inventoryX(i)-inventory_slot_size/2-4,get_inventoryY(i)-inventory_slot_size/2-9,get_inv_button(i));
+		if(currentObject.uses_energy){
+			draw_set_color(c_black)
+			draw_rectangle(get_inventoryX(i)+inventory_slot_size/2-5,get_inventoryY(i)-inventory_slot_size/2+2,get_inventoryX(i)+inventory_slot_size/2,get_inventoryY(i)+inventory_slot_size/2-2, false)
+			draw_set_color(c_aqua)
+			var offset = (currentObject.energy/currentObject.max_energy)*(inventory_slot_size-4)
+			draw_rectangle(get_inventoryX(i)+inventory_slot_size/2-4,get_inventoryY(i)+inventory_slot_size/2-2-offset,get_inventoryX(i)+inventory_slot_size/2-1,get_inventoryY(i)+inventory_slot_size/2-2, false)
+			
+		}
 	}
 	
 	//draw tooltips

@@ -17,5 +17,8 @@ create_option("Never mind.",exit_dialogue,2);
 else{
 		create_option("Never mind.",exit_dialogue,1);
 }
+if(instance_exists(downed_char)){
+		create_option("I need to revive someone", revive, 3);
+}
 control.paused = true;
 mouse.fixed_camera = true;

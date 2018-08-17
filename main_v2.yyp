@@ -207,6 +207,14 @@
             }
         },
         {
+            "Key": "0aa167ee-b470-4d25-a0a2-341e8365b313",
+            "Value": {
+                "id": "45fc4634-47ec-4818-9a01-44bc75c8b38d",
+                "resourcePath": "objects\\green_spirit\\green_spirit.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0ab0f380-3fc2-4432-b260-7210c40d84c9",
             "Value": {
                 "id": "9459aed1-6d7a-44cf-80db-53ff9bfd4cae",
@@ -399,6 +407,14 @@
             }
         },
         {
+            "Key": "1584bb5e-a6e5-4c42-8985-1058c8ba4ec2",
+            "Value": {
+                "id": "024203b4-69c2-4442-8423-32b9cb6a308a",
+                "resourcePath": "sprites\\green_shield\\green_shield.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "166cae2f-c3ee-491e-88ec-7a0c68afa53f",
             "Value": {
                 "id": "d55a7650-68cb-4cac-acfb-40c4dced21f2",
@@ -452,6 +468,14 @@
                 "id": "977c3e26-b5d4-41b6-8783-3e3a597bc303",
                 "resourcePath": "sprites\\trap_detonator_sprt\\trap_detonator_sprt.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "1a7568a4-50f4-441e-be20-b9f4bb83234f",
+            "Value": {
+                "id": "7247457e-f0d9-4b81-832b-7cff064d4874",
+                "resourcePath": "objects\\test_light\\test_light.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -599,6 +623,14 @@
             }
         },
         {
+            "Key": "20e8b616-30db-4429-bdd2-6a426f8d938d",
+            "Value": {
+                "id": "0ce21b13-ecc0-4b72-9d14-fd1c6c73a8d6",
+                "resourcePath": "objects\\green_spirit_attack\\green_spirit_attack.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "21897276-5e6b-4016-aff6-48d09687a756",
             "Value": {
                 "id": "8d2c1e75-8f7f-4e39-8a53-a975c01ace0c",
@@ -676,6 +708,14 @@
                 "id": "e29728f8-53bc-426f-8acb-92952ce38947",
                 "resourcePath": "objects\\disruptor\\disruptor.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "25c81e68-2043-466c-9a48-b0176d3194f3",
+            "Value": {
+                "id": "ac3b087b-6275-487e-9d9c-5df2134004e5",
+                "resourcePath": "rooms\\level_test_6\\level_test_6.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -1263,6 +1303,14 @@
             }
         },
         {
+            "Key": "4762f645-58de-40ae-b158-e04cdc7c0dbf",
+            "Value": {
+                "id": "25c8027b-fe36-4f1b-91d1-88ebcfcd0c0d",
+                "resourcePath": "objects\\door_test_10\\door_test_10.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "490e7d0b-19d2-4ad1-8faa-54a94f0a86ec",
             "Value": {
                 "id": "5182c1f6-354e-47e7-bc76-9f611dc452eb",
@@ -1292,6 +1340,14 @@
                 "id": "0e120e8d-5a5d-4a71-b02b-aa45c4a17f00",
                 "resourcePath": "sprites\\counter_left\\counter_left.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "4aad7332-9cf0-43a9-89aa-ebb344f37706",
+            "Value": {
+                "id": "eef54dc7-2f6b-4151-858f-f5ee06f8ba52",
+                "resourcePath": "objects\\green_spirit_focus\\green_spirit_focus.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1420,6 +1476,14 @@
                 "id": "4e944f93-f3c0-4e9d-a46e-a15a57542c24",
                 "resourcePath": "sprites\\concrete_bottom\\concrete_bottom.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "51adda1d-736e-4bbb-bf31-14dea23509ef",
+            "Value": {
+                "id": "2ed4865a-c0dc-4c07-8c27-255d28685381",
+                "resourcePath": "views\\51adda1d-736e-4bbb-bf31-14dea23509ef.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -1687,6 +1751,14 @@
             }
         },
         {
+            "Key": "63bdcd9d-bbb8-4f92-8ba1-a96bcfa5e64a",
+            "Value": {
+                "id": "517cb4db-5b55-4c76-9355-e3e9e554c52f",
+                "resourcePath": "views\\63bdcd9d-bbb8-4f92-8ba1-a96bcfa5e64a.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "63f4d349-de45-43a8-8467-2a8d3334a319",
             "Value": {
                 "id": "7a2ddd02-1b89-4469-8dfa-39f35b3845ba",
@@ -1780,6 +1852,14 @@
                 "id": "f24b094e-1667-4173-93d6-78ee78275ce1",
                 "resourcePath": "views\\691cf2cd-181f-491c-a25c-6af5aec42436.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "6942abd4-9c2e-4624-910d-f33e9ccf8df0",
+            "Value": {
+                "id": "72ea1f54-6386-41f8-9f16-31b9ebbc5e0a",
+                "resourcePath": "scripts\\revive\\revive.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -2556,6 +2636,14 @@
                 "id": "d178d8ff-fbaa-4449-8446-228631ccd283",
                 "resourcePath": "views\\9a1fdf10-c495-476a-851c-4f1e68d24dd8.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "9a8c4f2b-7f77-4a83-893b-3e0d85e4100b",
+            "Value": {
+                "id": "afa1dd8e-daa5-41d2-b863-35261d7d6e13",
+                "resourcePath": "sprites\\green_spirit_projectile\\green_spirit_projectile.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -3487,6 +3575,14 @@
             }
         },
         {
+            "Key": "cd560ec9-4604-4a6b-8518-b93385d0edcf",
+            "Value": {
+                "id": "1f924733-0cbb-4949-85b0-7ddcaeae6128",
+                "resourcePath": "sprites\\green_spirit_sprt\\green_spirit_sprt.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "cd8230a3-0673-4b97-8676-035e2a49836d",
             "Value": {
                 "id": "1923a23e-4f24-4cd2-9940-4f8c61b26a87",
@@ -3556,6 +3652,14 @@
                 "id": "869ef175-5549-49ff-b0a3-9b75ed3af7f0",
                 "resourcePath": "scripts\\level_1_scene_20\\level_1_scene_20.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "d45bddf7-4e7d-4189-aac7-0792f7cb2314",
+            "Value": {
+                "id": "26c1d78d-ff41-4c37-b3d8-af80659a561b",
+                "resourcePath": "sprites\\green_spirit_attack_sprt\\green_spirit_attack_sprt.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -4071,6 +4175,14 @@
             }
         },
         {
+            "Key": "f5304c07-1a88-4e33-95a9-ea3b0791f06a",
+            "Value": {
+                "id": "de17d512-a58e-4bcb-82cb-f9c5376fb4ac",
+                "resourcePath": "sprites\\hex_pattern\\hex_pattern.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "f565b1ee-5777-476e-8a5c-f1a5cb6f81d8",
             "Value": {
                 "id": "5cbb76c1-3b0c-4daf-8e68-74f5e9b0a049",
@@ -4179,6 +4291,14 @@
             "Value": {
                 "id": "31cbaa5e-e636-40b0-afa2-75b0ab32b88f",
                 "resourcePath": "objects\\level_test_room_controler\\level_test_room_controler.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "fbb5043b-158a-44db-b3b3-727c350156e8",
+            "Value": {
+                "id": "ad598710-4601-4ffa-8211-2fbf57ccfd6a",
+                "resourcePath": "objects\\door_test_9\\door_test_9.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -4349,6 +4469,7 @@
         "b24de416-0849-41c5-a779-aedd57f1d03a",
         "08b05bfd-1d43-409e-9541-c19b321e4a95",
         "1fa9ed1f-0f37-4edf-b440-426144c37123",
+        "6942abd4-9c2e-4624-910d-f33e9ccf8df0",
         "742837d5-429c-4e56-b9a1-8a7b5fd1a9f6",
         "406107fd-ed51-489f-8eec-65a25d318ed5",
         "bcf156b5-ec03-49fb-8b28-01c752a47549",

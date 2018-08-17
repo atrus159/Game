@@ -6,3 +6,4 @@ stored_list = ds_list_create();
 tool_tip_txt = "Used Trap\n_____________\n\nActivate to release the spirits."
 useFlag = 0;
 cooldown = 0;
+pickable = 0;

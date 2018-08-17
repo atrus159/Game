@@ -5,6 +5,10 @@ var invIndex = ds_list_find_index(holder.inventory,self);
 delete_id = holder.inventory;
 delete_pos = invIndex;
 instance_create_layer(holder.x,holder.y,"lighting",trap_release);
+var myTrap = instance_create_layer(holder.x,holder.y,"lighting",trap);
+ds_list_add(holder.inventory,myTrap);
+myTrap.holder = holder;
+myTrap.dropped = 0;
 for(var i = 0; i<ds_list_size(stored_list); i+=1){
 	with(ds_list_find_value(stored_list,i)){
 		x = other.holder.x;
@@ -15,5 +19,6 @@ for(var i = 0; i<ds_list_size(stored_list); i+=1){
 	}
 }
 delete_flag = 1;
+
 	}
 }

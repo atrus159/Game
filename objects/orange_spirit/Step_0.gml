@@ -10,9 +10,14 @@ if(!control.paused && !stored && store_x == -1 && store_y == -1){
 		}else{
 			destinationX = x+random(500) - 250;
 			destinationY = y+random(500) - 250;
+			if(distance_to_object(orange_spirit_focus)<400){
 			while(point_distance(destinationX,destinationY,orange_spirit_focus.x,orange_spirit_focus.y)>300){
 				destinationX = x+random(500) - 250;
 				destinationY = y+random(500) - 250;	
+			}
+			}else{
+				destinationX = orange_spirit_focus.x+random(500) - 250;
+				destinationY = orange_spirit_focus.y+random(500) - 250;		
 			}
 			t = 0;
 			find_space();
@@ -20,12 +25,19 @@ if(!control.paused && !stored && store_x == -1 && store_y == -1){
 		}
 		mp_potential_step_object(destinationX,destinationY,3/(disable_stack+1),spirit_wall);
 		facing = direction;
-		if(distance_to_object(nearest)<=200){
+		if(nearest != noone && distance_to_object(nearest)<=200){
 			state  = 1;
 			t = 0;
 		}
 		break;
 		case 1:
+		if(nearest == noone){
+			state = 0
+			break;
+		}
+		if(distance_to_object(orange_spirit_focus) > 300){
+			state = 0;	
+		}
 		facing = 180-darctan2(y-nearest.y,x-nearest.x);
 		var dist = distance_to_object(nearest);
 		if(dist>200 && dist <300){
@@ -48,6 +60,11 @@ if(!control.paused && !stored && store_x == -1 && store_y == -1){
 		break;
 		
 		case 2:
+				if(nearest == noone){
+				sprite_index = orange_spirit_sprt;
+				state = 0
+				break;
+				}
 				facing = 180-darctan2(y-nearest.y,x-nearest.x);
 				sprite_index = orange_spirit_attack_sprt;
 				t +=1;

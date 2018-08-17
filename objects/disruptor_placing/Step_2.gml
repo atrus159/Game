@@ -13,7 +13,7 @@ if(t != -1){
 		if(nearestWall != noone){
 			dist = distance_to_point(nearestWall.x,nearestWall.y)+32	
 		}
-		var placed = instance_create_layer(x,y,"walls",disruptor_placed)
+		var placed = instance_create_depth(x,y,layer_get_depth("lighting")+1,disruptor_placed)
 		placed.target = collision_line_first(x,y,x+lengthdir_x(dist,facing),y+lengthdir_y(dist,facing),spirit,true,true)
 		placed.facing = facing
 		instance_destroy(self);

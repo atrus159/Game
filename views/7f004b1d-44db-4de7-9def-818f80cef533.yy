@@ -11,7 +11,9 @@
         "76b6af12-5cb3-4da8-886e-a66bfe219bf7",
         "a88b2e89-822c-473b-b4e9-f0e54f31dd9f",
         "fd4e2a3b-6a34-4b77-9f4d-2900983c501f",
-        "de9c37fe-17cd-4982-824e-5907bbb39db6"
+        "de9c37fe-17cd-4982-824e-5907bbb39db6",
+        "fbb5043b-158a-44db-b3b3-727c350156e8",
+        "4762f645-58de-40ae-b158-e04cdc7c0dbf"
     ],
     "filterType": "GMObject",
     "folderName": "door_test",

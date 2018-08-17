@@ -3,7 +3,7 @@ camera_set_view_pos(mouse.myCamera, x-100,y-150);
 	var offset = 0;
 with(pc_character){
 	direction = 0;
-	x = other.x +64;
+	x = other.x +32;
 	y = other.y +65*offset;
 	if(offset<=0){
 		offset *= -1;	

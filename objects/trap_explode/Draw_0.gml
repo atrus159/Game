@@ -7,6 +7,7 @@ if(t == 38){
   tdir = 1;	
 }
 if(t <0){
+	created_trap.pickable = 1;
 	instance_destroy(self);	
 }
 draw_set_color(c_lime)

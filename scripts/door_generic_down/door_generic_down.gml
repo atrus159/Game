@@ -4,7 +4,7 @@ var offset = 0;
 with(pc_character){
 	direction = 90;
 	x = other.x +65*offset;
-	y = other.y - 64;
+	y = other.y - 32;
 	if(offset<=0){
 		offset *= -1;	
 		offset +=1;
