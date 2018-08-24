@@ -1,5 +1,5 @@
 hud_edge_weigth = 10;
-show_debug_overlay(true)
+//show_debug_overlay(true)
 advice_text = ""
 
 selecting = false;
@@ -10,7 +10,7 @@ select_distance = 10;
 text_width = 300;
 text_height = 30;
 paused = false;
-inventory_size = 9;
+inventory_size = 6;
 //window_set_fullscreen(true);
 //window_set_rectangle(100,100,1024,768);
 //application_surface_draw_enable(false);
@@ -29,12 +29,17 @@ draw_zeroY = global.Yoffset;
 draw_height = global.MonitorH; //surface_get_height(application_surface)+draw_zeroY
 draw_width = global.MonitorW-global.Xoffset;//surface_get_width(application_surface)+draw_zeroX
 
+first_time_room = 0;
 
 ep_to_money = 1;
 money = 0;
 hud_height = (200/768)*draw_height//150;
 inventory_slot_size = 55//(hud_height-72)/3;
-
+mini_map_size = hud_height-31-20;
+mini_map_x = draw_zeroX+9
+mini_map_y = draw_zeroY+draw_height-hud_height+31+4
+macro_map_x = 0;
+macro_map_y = 0;
 
 door_out = noone;
 dont_deselect = 0;

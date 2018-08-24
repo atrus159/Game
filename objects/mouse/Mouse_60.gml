@@ -1,12 +1,8 @@
 if(!fixed_camera){
-	/*var cameraX = mouse_x-camera_get_view_x(myCamera);
-	var cameraY = mouse_y-camera_get_view_y(myCamera);
-	camera_set_view_size(myCamera,camera_get_view_width(myCamera)/1.1,camera_get_view_height(myCamera)/1.1);
-	camera_set_view_pos(myCamera,mouse_y-cameraX/1.1,mouse_y-cameraY/1.1);*/
-	
-	var cameraX = x-camera_get_view_x(myCamera);
-	var cameraY = y-camera_get_view_y(myCamera);
-	camera_set_view_size(myCamera,camera_get_view_width(myCamera)/1.1,camera_get_view_height(myCamera)/1.1);
-	camera_set_view_pos(myCamera,x-cameraX/1.1,y-cameraY/1.1);
-	
+	if(camera_get_view_width(myCamera)/1.1>=100){
+		var cameraX = x-camera_get_view_x(myCamera);
+		var cameraY = y-camera_get_view_y(myCamera);
+		camera_set_view_size(myCamera,camera_get_view_width(myCamera)/1.1,camera_get_view_height(myCamera)/1.1);
+		camera_set_view_pos(myCamera,x-cameraX/1.1,y-cameraY/1.1);
+	}
 }

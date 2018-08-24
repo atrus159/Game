@@ -17,8 +17,8 @@ if(foot_timer<=-walkSpeed*(10 / walkSpeed)){
 	foot_facing = 0;
 }
 }
-draw_sprite_ext(foot_right,-1,x+foot_timer*cos(-degtorad(direction)),y+foot_timer*sin(-degtorad(direction)),1,1,direction,c_white,1);
-draw_sprite_ext(foot_left,-1,x+foot_timer*cos(-degtorad(180+direction)),y+foot_timer*sin(-degtorad(180+direction)),1,1,direction,c_white,1);
+draw_sprite_ext(foot_right,-1,x+foot_timer*cos(-degtorad(direction)),y+foot_timer*sin(-degtorad(direction)),1,1,direction,draw_color,1);
+draw_sprite_ext(foot_left,-1,x+foot_timer*cos(-degtorad(180+direction)),y+foot_timer*sin(-degtorad(180+direction)),1,1,direction,draw_color,1);
 if(destinationX != -1 && destinationY != -1){
 	switch(moveType){
 		case MoveTypes.move:
@@ -30,7 +30,7 @@ if(destinationX != -1 && destinationY != -1){
 	}
 }
 
-draw_sprite_ext(sprite_index, -1, x, y, 1, 1, direction, c_white, 1);
+draw_sprite_ext(sprite_index, -1, x, y, 1, 1, direction, draw_color, 1);
 
 
 if(selected){

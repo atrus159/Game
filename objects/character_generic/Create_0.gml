@@ -18,3 +18,5 @@ foot_right = nicole_right_foot
 inventory = ds_list_create();
 char_health = 100;
 char_max_health = 100;
+draw_color =c_white
+chosen = 0;

@@ -15,3 +15,4 @@ if(door_out != noone){
 	door_out = noone
 }
 
+first_time_room = true;

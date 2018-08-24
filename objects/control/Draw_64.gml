@@ -138,3 +138,104 @@ if(ds_list_size(selected)!=0){
 	
 }
 
+
+
+//draw miniMap
+draw_set_color(make_color_hsv(0,0,30));
+draw_roundrect(mini_map_x-5,mini_map_y-5,mini_map_x+mini_map_size+5,mini_map_y+mini_map_size+5,false)
+draw_rectangle(mini_map_x-5,mini_map_y-4,mini_map_x,mini_map_y+mini_map_size+5,false)
+draw_set_color(c_black);
+draw_rectangle(mini_map_x,mini_map_y,mini_map_x+mini_map_size,mini_map_y+mini_map_size,false)
+var factor = 0;
+var x_map_off = 0;
+var y_map_off = 0;
+if(room_height>room_width){
+	factor = mini_map_size/room_height	
+	x_map_off = (mini_map_size-room_width*factor)/2
+}else{
+	factor = mini_map_size/room_width
+	y_map_off = (mini_map_size-room_height*factor)/2
+}
+
+with(wall){
+	draw_set_color(c_green)
+	var xPos = x*factor+x_map_off+other.mini_map_x
+	var yPos = y*factor+y_map_off+other.mini_map_y
+	draw_rectangle(xPos-32*factor,yPos-32*factor,xPos+32*factor,yPos+32*factor,false)
+}
+with(door){
+	draw_set_color(c_silver)
+	var xPos = x*factor+x_map_off+other.mini_map_x
+	var yPos = y*factor+y_map_off+other.mini_map_y
+	draw_line_width(xPos+lengthdir_x(50*factor,facing+60+180),yPos+lengthdir_y(50*factor,facing+60+180),xPos+lengthdir_x(50*factor,facing-60+180),yPos+lengthdir_y(50*factor,facing-60+180),20*factor)
+}
+with(interactable){
+	draw_set_color(c_yellow)
+	var xPos = x*factor+x_map_off+other.mini_map_x
+	var yPos = y*factor+y_map_off+other.mini_map_y
+	draw_triangle(xPos-32*factor,yPos+32*factor,xPos+32*factor,yPos+32*factor,xPos,yPos-32*factor,false)
+}
+with(npc){
+	draw_set_color(c_yellow)
+	var xPos = x*factor+x_map_off+other.mini_map_x
+	var yPos = y*factor+y_map_off+other.mini_map_y
+	draw_triangle(xPos-32*factor,yPos+32*factor,xPos+32*factor,yPos+32*factor,xPos,yPos-32*factor,false)
+}
+with(green_character){
+	draw_set_color(c_lime)
+	var xPos = x*factor+x_map_off+other.mini_map_x
+	var yPos = y*factor+y_map_off+other.mini_map_y
+	draw_circle(xPos,yPos,32*factor,false)
+}
+with(pink_character){
+	draw_set_color(c_fuchsia)
+	var xPos = x*factor+x_map_off+other.mini_map_x
+	var yPos = y*factor+y_map_off+other.mini_map_y
+	draw_circle(xPos,yPos,32*factor,false)
+}
+with(nicole_char){
+	draw_set_color(c_aqua)
+	var xPos = x*factor+x_map_off+other.mini_map_x
+	var yPos = y*factor+y_map_off+other.mini_map_y
+	draw_circle(xPos,yPos,32*factor,false)
+}
+with(downed_char){
+	draw_set_color(c_red)
+	var xPos = x*factor+x_map_off+other.mini_map_x
+	var yPos = y*factor+y_map_off+other.mini_map_y
+	draw_line_width(xPos-25*factor,yPos-25*factor,xPos+25*factor,yPos+25*factor,10*factor)
+	draw_line_width(xPos+25*factor,yPos-25*factor,xPos-25*factor,yPos+25*factor,10*factor)
+}
+with(spirit){
+	if(!stored){
+	draw_set_color(c_red)
+	var xPos = x*factor+x_map_off+other.mini_map_x
+	var yPos = y*factor+y_map_off+other.mini_map_y
+	draw_triangle(xPos-25*factor,yPos-25*factor,xPos+25*factor,yPos-25*factor,xPos,yPos+25*factor,false)
+	}
+}
+with(item){
+	if(dropped){
+	var xPos = x*factor+x_map_off+other.mini_map_x
+	var yPos = y*factor+y_map_off+other.mini_map_y
+	//draw_triangle(xPos-15*factor,yPos+15*factor,xPos+15*factor,yPos+15*factor,xPos,yPos-15*factor,false)
+	draw_set_color(c_black)
+	draw_rectangle(xPos-15*factor,yPos-15*factor,xPos+15*factor,yPos+15*factor,false)
+	draw_set_color(c_yellow)
+	draw_rectangle(xPos-7*factor,yPos-7*factor,xPos+7*factor,yPos+7*factor,false)
+	}
+}
+
+draw_set_color(c_white)
+var xPos = camera_get_view_x(mouse.myCamera)*factor+x_map_off+other.mini_map_x
+var yPos = camera_get_view_y(mouse.myCamera)*factor+y_map_off+other.mini_map_y
+var posWidth = camera_get_view_width(mouse.myCamera)*factor
+var posHeight = (camera_get_view_height(mouse.myCamera))*factor
+draw_rectangle(xPos,yPos,xPos+posWidth,yPos+posHeight,true)
+
+draw_set_color(c_black)
+draw_set_alpha(0.5)
+draw_rectangle(draw_zeroX,draw_zeroY,draw_zeroX+150,draw_zeroY+150,false)
+draw_sprite(test_macro_map,-1,draw_zeroX+25,draw_zeroY+25)
+draw_set_alpha(1)
+draw_sprite(you_are_here,-1,draw_zeroX+macro_map_x+25,draw_zeroY+macro_map_y+25)

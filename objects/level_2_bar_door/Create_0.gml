@@ -1,3 +1,4 @@
+event_inherited()
 depth =layer_get_depth("lighting")-1;
 facing = 180;
 light_through = 1;

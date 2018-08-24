@@ -1,3 +1,4 @@
+event_inherited()
 depth =layer_get_depth("walls")-1;
 facing = 0;
 light_through = 0;

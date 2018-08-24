@@ -6,3 +6,6 @@ for(var i = 0; i< inventory_size; i++){
 		}
 	}
 }
+/*if(!window_get_fullscreen()){
+	window_set_fullscreen(1)	
+}*/

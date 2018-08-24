@@ -25,7 +25,7 @@ if(!control.paused && !stored && store_x == -1 && store_y == -1){
 		}
 		mp_potential_step_object(destinationX,destinationY,3/(disable_stack+1),spirit_wall);
 		facing = direction;
-		if(nearest != noone && distance_to_object(nearest)<=200){
+		if(nearest != noone && distance_to_object(nearest)<=200 && distance_to_object(orange_spirit_focus)<400){
 			state  = 1;
 			t = 0;
 		}
