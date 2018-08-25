@@ -30,6 +30,7 @@ if(!control.paused){
 		}
 
 	}
+		audio_play_sound(blink_sfx,0,false)
 		instance_destroy(self);
 	}
 

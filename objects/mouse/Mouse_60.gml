@@ -1,5 +1,5 @@
 if(!fixed_camera){
-	if(camera_get_view_width(myCamera)/1.1>=100){
+	if(camera_get_view_width(myCamera)/1.1>=200){
 		var cameraX = x-camera_get_view_x(myCamera);
 		var cameraY = y-camera_get_view_y(myCamera);
 		camera_set_view_size(myCamera,camera_get_view_width(myCamera)/1.1,camera_get_view_height(myCamera)/1.1);

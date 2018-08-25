@@ -13,7 +13,7 @@ if(myScript = noone){
 	draw_set_font(Header_font);
 	draw_set_color(c_white);
 		draw_set_halign(fa_center)
-	draw_text_ext_transformed(textX,textY,myText,30,(control.draw_width-3*control.inventory_slot_size)*(2/3),global.MonitorH/1080,global.MonitorH/1080,0);
+	draw_text_ext_transformed(textX,textY,myText,30,(control.draw_width-3*control.inventory_slot_size),global.MonitorH/1080,global.MonitorH/1080,0);
 		draw_set_halign(fa_left)
 }
 else{
