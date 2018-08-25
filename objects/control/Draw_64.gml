@@ -91,7 +91,30 @@ if(ds_list_size(selected)!=0){
 	var inventory = ds_list_find_value(selected,0).inventory;
 	for(i = 0; i<ds_list_size(inventory);i++){
 		var currentObject = ds_list_find_value(inventory,i)
+		switch(currentObject.only_holder){
+			case nicole_char:
+			draw_set_color(c_aqua);
+			break;
+			case pink_character:
+			draw_set_color(c_fuchsia);
+			break;
+			case green_character:
+			draw_set_color(c_lime);
+			break;
+		}
+		if(currentObject.only_holder != noone){
+			draw_set_alpha(0.2)
+			draw_rectangle(get_inventoryX(i)-inventory_slot_size/2+5,get_inventoryY(i)-inventory_slot_size/2+5,get_inventoryX(i)+inventory_slot_size/2-5,get_inventoryY(i)+inventory_slot_size/2-5,false)
+			draw_set_alpha(1)
+		}
 		draw_sprite(currentObject.sprite_inventory,-1,get_inventoryX(i),get_inventoryY(i))
+		if(currentObject.only_holder != noone && currentObject.only_holder != currentObject.holder.object_index){
+			draw_set_alpha(0.5)
+			draw_set_color(c_red)
+			draw_line_width(get_inventoryX(i)-inventory_slot_size/2+5,get_inventoryY(i)-inventory_slot_size/2+5,get_inventoryX(i)+inventory_slot_size/2-5,get_inventoryY(i)+inventory_slot_size/2-5,3)
+			draw_line_width(get_inventoryX(i)+inventory_slot_size/2-5,get_inventoryY(i)-inventory_slot_size/2+5,get_inventoryX(i)-inventory_slot_size/2+5,get_inventoryY(i)+inventory_slot_size/2-5,3)
+			draw_set_alpha(1)
+		}
 		
 		if(currentObject.cooldown_timer>0){
 			var ct = currentObject.cooldown_timer;

@@ -8,3 +8,4 @@ cooldown = 25;
 max_energy = 60*3*9
 energy = max_energy
 uses_energy = 1;
+only_holder = pink_character

@@ -5,3 +5,4 @@ sprite_dropped = bauble_dropped;
 tool_tip_txt = "Blink Bauble\n_____________\n\nTeleports a short distance."
 zone = noone;
 cooldown = 60*5
+only_holder = green_character
